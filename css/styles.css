@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Abril';
+    src: url(../tipos/AbrilFatface-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Canopee';
+    src: url(../tipos/Canopee\ Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --colorFondo: black;
+    --colorClaro: white;
+    --tipoCanopee: 'Canopee';
+    --tipoAbril: 'Abril';
+    --color1: #027857;
+    --color2: #E6A3B8;
+    --color3: #F6BF03;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--tipoAbril);
+    scroll-behavior: smooth;
+
+}
+
+section {
+    margin: 2em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #027857;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #027857;
+}
+
+h3 {
+    font-size: 2em;
+    color: #027857;
+}
+
+p {
+    font-size: 1.5em;
+    color: #027857;
+}
+
+.header {
+    background-color: var(--color1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    padding: 2em;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header li a {
+    display: block;
+    padding: 2em;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu>li>a>img {
+    height: 1.3em;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: var(--color2);
+    display: block;
+    height: 2px;
+    position: relative;
+
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: var(--color2);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 400px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
