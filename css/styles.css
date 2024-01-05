@@ -274,8 +274,6 @@ p {
 }
 
 #latas>figure>figcaption>div {
-  
-      
         width: 100%;
         height: 100%;
         display: flex;
@@ -284,8 +282,8 @@ p {
         padding: 8em;
     
 }
+
 #barritas>figure>figcaption>div {
-  
       
     width: 100%;
     height: 100%;
@@ -580,11 +578,6 @@ footer>div>p {
 
 /* FOOTER */
 
-footer {
-    width: 100%;
-    height: 2%;
-}
-
 footer>div {
     background-color: var(--color1);
     display: flex;
@@ -596,4 +589,198 @@ footer>div {
 footer>div>p {
     color: var(--color2);
     padding: 1.5em;
+}
+
+/* RESPONSIVE */
+@media (min-width: 903px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #tienda>div>div>div>figure>figcaption>div>p {
+        font-size: 0.8em;
+    
+    }
+}
+@media only screen and (max-width: 800px) {
+    .info {
+        flex: 60%;
+    }
+
+    .info>h1 {
+        font-size: 2.3em;
+
+    }
+
+    .info>h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 2.3em;
+
+    }
+
+    #tienda>div>div {
+
+        flex-direction: column;
+
+    }
+
+    #tienda>div>div>div {
+
+        flex-direction: column;
+    }
+
+    #tienda>div>div>div>figure {
+        width: 50vw;
+      
+    }
+
+    #tienda>div>div>div>figure>img {
+        height: 60vh;
+    }
+    #tienda>div>div>div>figure>figcaption>div>p {
+        font-size: 1em;
+    
+    }
+}
+
+/* RESPONSIVE TABLET*/
+@media only screen and (max-width: 600px) {
+    #tienda>div>div>div>figure>img {
+        height: 45vh;
+        
+    }
+    #tienda>div>div>div>figure {
+        width: 70vw;
+       
+    }
+
+    #inicio>div {
+
+        flex-direction: column;
+    }
+    
+
+    .img {
+        scale: 58%;
+        position: relative;
+        bottom: -80px;
+    }
+    .header ul {
+        flex-direction: column;
+        
+    }
+    footer>div>p {
+        font-size: 0.7em;
+    }
+}
+
+/* RESPONSIVE MOVIL*/
+@media only screen and (max-width: 450px) {
+
+    .img>img {
+        width: 0%;
+        margin: 0em;
+    
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0.5em 0.5em 0.5em;
+    }
+
+    .info>h1 {
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+
+    .info>h3 {
+        font-size: 1em;
+        text-align: center;
+
+    }
+
+    .info>p {
+        font-size: 0.8em;
+        text-align: justify;
+        padding-right: 0em;
+    
+    }
+    #latas>figure>figcaption>div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+    
+    }
+
+    #barritas>figure>figcaption>div {
+      
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+
+    }
+    #otros>figure>figcaption>div {
+    
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+    }
+    #tienda>div>div>div>figure>figcaption>div>p {
+        position: absolute;
+        font-size: 0.8em;
+        vertical-align: middle;
+        padding: 4em;
+        text-align: justify;
+    
+    }
+    h4 {
+        font-family: var(--tipoCanopee);
+        font-size: 1.5em;
+    }
+    #compra {
+        padding-top: 10%;
+        padding-bottom: 50%;
+    }
+    #compra > h3 {
+        font-size: 1.7em;
+        padding-bottom: 0%;
+    }
+    #compra > p {
+        font-size: 1.5em;
+        padding-bottom: 0%;
+    }
 }
