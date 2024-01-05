@@ -173,6 +173,51 @@ p {
     top: 0;
 }
 
+/* INICIO */
+#inicio {
+    height: 100vh;
+}
+
+#inicio>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img {
+    padding-top: 10%;
+    flex: 20%;
+}
+
+.img>img {
+    width: 100%;
+    margin: 1em;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding: 7em 2em 1em 3em;
+}
+
+.info>h1 {
+    font-size: 5em;
+    padding-bottom: 0.3em;
+}
+
+.info>h3 {
+    padding-bottom: 0.5em;
+}
+
+.info>p {
+    font-size: 1.2em;
+    text-align: justify;
+    padding-right: 6em;
+
+}
+
 /* TIENDA */
 #tienda{
     margin-top: 10em;
