@@ -183,10 +183,26 @@ p {
 
 /* INICIO */
 #inicio {
-    height: 500vh;
+    height: 310vh;
 
 }
+#inicio h1{
+    font-size: 4em;
+    color: #E6A3B8;
+    font-family: var(--tipoCanopee);
+    padding-bottom: 0%;
 
+}
+#inicio h4{
+    font-size: 4em;
+    color: #E6A3B8;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--tipoCanopee);
+    padding-top: 1em;
+
+}
 #inicio>div {
     display: flex;
     flex-direction: row;
@@ -209,17 +225,18 @@ p {
     flex-direction: column;
     flex: 50%;
     padding: 6em 2em 1em 2em;
-    text-align: center;
+    text-align: left;
 
 }
 
 .info>h1 {
-    font-size: 5em;
+    font-size: 4.3em;
 
 }
 
 .info>h3 {
     padding-bottom: 0.5em;
+
 }
 
 .info>p {
@@ -270,6 +287,12 @@ p {
     --bs-btn-disabled-border-color: #027556;
 }
 
+#carouselExampleIndicators {
+    width: 50%;
+    margin: auto;
+
+
+}
 
 /* TIENDA */
 .productos h1{
